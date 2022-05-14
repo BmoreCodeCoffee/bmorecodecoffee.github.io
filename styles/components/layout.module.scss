@@ -1,5 +1,7 @@
 @import '../theme/0_base.scss';
 
 .container {
-  background-color: $white;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 3em 5em;
+  padding: 2em;
 }
