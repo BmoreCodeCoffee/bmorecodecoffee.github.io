@@ -9,6 +9,9 @@ export default function Nav() {
       <banner className={styles.banner_container}>
         <img src='/bcc_banner_long.svg' alt='' />
       </banner>
+      <section className={styles.slack_link_container}>
+        Join the conversation on the <a className={styles.navLink} href="https://baltimoretech-slack.herokuapp.com/">Baltimore Tech slack</a>.
+      </section>
     </nav>
   )
 }
