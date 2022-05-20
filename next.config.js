@@ -1,4 +1,6 @@
-const prod = process.env.NODE_ENV === 'production'
+const isProd = process.env.NODE_ENV === 'production'
+
 module.exports = {
-  'process.env.BACKEND_URL': prod ? '/Next-gh-page-example' : ''
+  // Use the CDN in production and localhost for development.
+  assetPrefix: isProd ? 'https://cdn.statically.io/gh/BmoreCodeCoffee/bmorecodecoffee.github.io/gh-pages/' : '',
 }
