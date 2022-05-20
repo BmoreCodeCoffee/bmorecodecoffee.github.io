@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
-import Image from 'next/image'
-import bannerPic from '../public/bcc_banner.svg'
+import Footer from './footer';
 
-import styles from '../styles/styles.module.scss'
+import styles from '../styles/styles.module.scss';
 
 export default function Layout({ children }) {
   return (
@@ -12,17 +12,12 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className={styles.banner_container}>
-        <Image
-          src={bannerPic}
-          layout='fill'
-          objectFit='contain'
-          alt=""
-        />
-
+        <img src='/bcc_banner_long.svg' alt='' />
       </header>
       <main>
         {children}
       </main>
+      <Footer />
     </div>
   )
 }
