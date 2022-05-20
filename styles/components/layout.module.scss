@@ -1,0 +1,21 @@
+.container {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 2em auto;
+  padding: 1em;
+
+  @media only screen and (min-width: $medium-max) {
+    max-width: $large;
+  }
+}
+
+.banner_container {
+  display: flex;
+  justify-content: space-around;
+
+  @media only screen and (min-width: $medium-max) {
+    img {
+      width: 800px;
+      height: auto;
+    }
+  }
+}
