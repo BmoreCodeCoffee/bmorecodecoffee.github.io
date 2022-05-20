@@ -19,3 +19,18 @@
     }
   }
 }
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+
+  .icon {
+    width: 50px;
+    height: auto;
+  }
+
+  .icon:hover {
+    cursor: pointer;
+    opacity: 50%;
+  }
+}
