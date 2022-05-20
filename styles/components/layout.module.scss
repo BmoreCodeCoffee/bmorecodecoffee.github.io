@@ -1,5 +1,6 @@
 .container {
   background-color: rgba(255, 255, 255, 0.7);
+  color: $dark_gray;
   margin: 2em auto;
   padding: 1em;
 
@@ -33,4 +34,23 @@
     cursor: pointer;
     opacity: 50%;
   }
+}
+
+.slack_link_container {
+  display: flex;
+  justify-content: center;
+
+  a {
+    margin-left: 5px;
+  }
+}
+
+.navLink, .navLink:visited {
+  color: $ksu_purple;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.navLink:hover {
+  color: $gold;
 }
