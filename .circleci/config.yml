@@ -27,6 +27,7 @@ workflows:
     jobs:
       - node/test:
           name: Run unit tests
+          version: "16"
           run-command: "test:unit"
       - build-for-release:
           name: Prepare release build
