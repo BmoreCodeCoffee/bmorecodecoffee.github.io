@@ -1,8 +1,8 @@
 ---
-name: Feature
-about: Feature Issue Template
-title: '[Feature]'
-labels: development
+name: Enhancement
+about: Enhancement Issue Template
+title: '[Enhancement]'
+labels: development,enhancement
 assignees: ''
 ---
 
