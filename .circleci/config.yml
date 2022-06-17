@@ -29,7 +29,7 @@ jobs:
           at: ./dist/
       - gh-pages/deploy:
           setup-git: true
-          ssh-fingerprints: "e3:37:7e:42:83:bd:65:94:12:b3:55:1d:b9:61:56:26"
+          ssh-fingerprints: "67:49:0e:96:25:20:a0:35:7a:93:12:27:3e:4b:8d:e8"
 
 workflows:
   Build and deploy:
