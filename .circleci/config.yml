@@ -11,7 +11,7 @@ jobs:
       tag: "16.15"
     steps:
       - checkout
-      - node/install
+      - node/install-packages
       - run:
           name: Build code
           command: |
