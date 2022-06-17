@@ -33,3 +33,15 @@ npm run build
 ```sh
 npm run test:unit
 ```
+
+## How to contribute
+
+**Did you find a bug or notice something that could be changed/added/removed for a better experience?**
+
+1. Open a new issue by picking the correct template and give some background on what needs to change. Please provide enough information on the ticket so that if someone picked it up, they would not need to ask for clarification.
+
+2. When an issue exists, create a branch from the issue.
+
+![A screencap of the left hand menu of an issue where a user can click 'Create a branch' from an issue](/public/create_branch_screencap.png "Create a branch from an issue screencap")
+
+3. A PR requires at least one review before being merged into the main branch.
