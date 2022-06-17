@@ -21,6 +21,15 @@ jobs:
           root: ./dist/
           paths:
             - .
+  do-release:
+    executor: gh-pages/default
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ./dist/
+      - gh-pages/deploy:
+          setup-git: true
+          ssh-fingerprints: "e3:37:7e:42:83:bd:65:94:12:b3:55:1d:b9:61:56:26"
 
 workflows:
   Build and deploy:
@@ -36,14 +45,11 @@ workflows:
               only: /^main$/
           requires:
             - "Run unit tests"
-      - gh-pages/deploy:
+      - do-release:
           name: Deploy to Github Pages
           filters:
             branches:
               only: /^main$/
           requires:
             - "Prepare release build"
-          ssh-fingerprints: "e3:37:7e:42:83:bd:65:94:12:b3:55:1d:b9:61:56:26"
-          attach-workspace: true
-          workspace-root: ./dist/
 
