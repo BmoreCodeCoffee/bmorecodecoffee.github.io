@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-xs-0 col-md-4"/>
     <div class="col-xs-6 col-md-1 center-xs">
-      <a href="https://github.com/orgs/BmoreCodeCoffee/projects/1/views/1">
+      <a href="https://github.com/BmoreCodeCoffee">
         <img class="icon" src="../assets/img/icons/github.svg"
              alt="Github icon that links to the Baltimore Code & Coffee Github"/>
       </a>
