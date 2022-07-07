@@ -7,6 +7,11 @@ describe("Home view component", () => {
         render(HomeView);
     });
 
+    it("contains a link to the meet up", () => {
+        // Should throw an error if we don't have the link to the slack
+        screen.getByRole("link", {name: "Meet Up"});
+    });
+
     it("contains a link to the baltimore tech slack", () => {
         // Should throw an error if we don't have the link to the slack
         screen.getByRole("link", {name: "Baltimore Tech Slack"});
