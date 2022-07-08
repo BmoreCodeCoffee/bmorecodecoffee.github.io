@@ -1,10 +1,14 @@
 import HomeView from './HomeView.vue';
-import { describe, beforeEach, it} from "vitest";
-import { render, screen } from "@testing-library/vue";
+import { describe, beforeEach, afterEach, it} from "vitest";
+import {cleanup, render, screen} from "@testing-library/vue";
 
 describe("Home view component", () => {
     beforeEach(() => {
         render(HomeView);
+    });
+
+    afterEach(() => {
+        cleanup();
     });
 
     it("contains a link to the meet up", () => {
