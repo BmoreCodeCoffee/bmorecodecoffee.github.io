@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  gh-pages: sugarshin/gh-pages@1.0.1
+  gh-pages: sugarshin/gh-pages@1.0.0
   node: circleci/node@5.0.2
 
 jobs:
@@ -21,6 +21,15 @@ jobs:
           root: ./dist/
           paths:
             - .
+  do-release:
+    executor: gh-pages/default
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ./dist/
+      - gh-pages/deploy:
+          setup-git: true
+          ssh-fingerprints: "67:49:0e:96:25:20:a0:35:7a:93:12:27:3e:4b:8d:e8"
 
 workflows:
   Build and deploy:
@@ -36,14 +45,11 @@ workflows:
               only: /^main$/
           requires:
             - "Run unit tests"
-      - gh-pages/deploy:
+      - do-release:
           name: Deploy to Github Pages
           filters:
             branches:
               only: /^main$/
           requires:
             - "Prepare release build"
-          ssh-fingerprints: "67:49:0e:96:25:20:a0:35:7a:93:12:27:3e:4b:8d:e8"
-          attach-workspace: true
-          workspace-root: ./dist/
 
