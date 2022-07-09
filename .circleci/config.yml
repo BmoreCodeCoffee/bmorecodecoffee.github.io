@@ -46,7 +46,8 @@ workflows:
       - node/test:
           name: Run unit tests
           version: "16.15"
-          run-command: "test:unit"
+          run-command: "test:ci"
+          test-results-path: "./junit.xml"
       - build-for-release:
           name: Prepare release build
           filters:

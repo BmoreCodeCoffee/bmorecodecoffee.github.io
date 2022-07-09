@@ -5,7 +5,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview --port 4173",
-    "test:unit": "vitest --environment jsdom"
+    "test:unit": "vitest --environment jsdom",
+    "test:ci": "vitest --environment jsdom --watch false --reporter default --reporter junit --outputFile junit.xml"
   },
   "dependencies": {
     "@testing-library/vue": "^6.6.0",
