@@ -21,29 +21,28 @@ import SiteFooter from "./components/SiteFooter.vue";
 </template>
 
 <style lang="scss">
-@import "./assets/globals";
-@import "./assets/theme/color_palette";
-@import "./assets/theme/screen_sizes";
+  @import "./assets/globals";
+  @import "./assets/theme/color_palette";
+  @import "./assets/theme/screen_sizes";
 
-a, a:visited {
-  color: $ksu_purple;
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: $gold;
-}
-
-.container {
-  background-color: rgba(255, 255, 255, 0.7);
-  color: $dark_gray;
-  margin: 2em auto;
-  padding: 1em;
-
-  @media only screen and (max-width: $medium-min) {
-    max-width: $large;
+  a, a:visited {
+    color: $ksu_purple;
+    font-weight: 700;
+    text-decoration: underline;
   }
-}
 
+  a:hover {
+    color: $gold;
+  }
+
+  .container {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: $dark_gray;
+    margin: 2em auto;
+    padding: 1em;
+
+    @media only screen and (max-width: $medium-min) {
+      max-width: $large;
+    }
+  }
 </style>
