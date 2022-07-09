@@ -2,6 +2,7 @@
 import {RouterView} from 'vue-router'
 import Navigation from "./components/Navigation.vue";
 import SiteFooter from "./components/SiteFooter.vue";
+import MeetupEvents from './components/MeetupEvents.vue';
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import SiteFooter from "./components/SiteFooter.vue";
     </header>
 
     <main>
+      <MeetupEvents/>
       <RouterView/>
     </main>
 
