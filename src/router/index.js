@@ -12,12 +12,12 @@ const router = createRouter({
     {
       path: '/code-of-conduct',
       name: 'code-of-conduct',
-      component: import('../views/CodeOfConduct.vue'),
+      component: () => import('../views/CodeOfConduct.vue'),
     },
     {
       path: '/anonymous-report',
       name: 'report',
-      component: import('../views/AnonymousReport.vue'),
+      component: () => import('../views/AnonymousReport.vue'),
     }
   ]
 })
