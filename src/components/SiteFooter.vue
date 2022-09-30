@@ -1,4 +1,11 @@
 <template>
+  <div class="row" id="cc_sponsors">
+    <img class="logo" src="../assets/img/sponsors/fearless_logo.png"
+      alt="Fearless logo that links to the Code & Coffee Sponsor, Fearless" />
+    <img class="logo" src="../assets/img/sponsors/spark_logo.png" />
+    <img class="logo" src="../assets/img/sponsors/mastermnd_logo.png" />
+    <img class="logo" src="../assets/img/sponsors/DHF_logo.png" />
+  </div>
   <div class="row">
     <div class="col-xs-0 col-md-4"/>
     <div class="col-xs-6 col-md-1 center-xs">
