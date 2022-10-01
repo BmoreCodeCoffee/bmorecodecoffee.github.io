@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <div class="row center-xs">
+    <div class="row center-xs" id="nav-links-container">
       <div class="col-xs-6 col-md-2 link-space">
         <RouterLink :to="{name: 'home'}">Home page</RouterLink>
       </div>
