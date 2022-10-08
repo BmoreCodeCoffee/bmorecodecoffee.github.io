@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-xs-12 center-xs">
         <p>Check out our next <a href="https://www.meetup.com/baltimore-code-and-coffee/events/" target="_blank">Meet Up</a>.</p>
-        <p>Join the conversation on the <a href="https://baltimoretech-slack.herokuapp.com/" target="_blank">Baltimore Tech Slack</a>.</p>
+        <p>Join the conversation on the <a href="https://slofile.com/slack/baltimoretech" target="_blank">Baltimore Tech Slack</a>. (Click on the +Join button)</p>
       </div>
     </div>
     <div class="row">
