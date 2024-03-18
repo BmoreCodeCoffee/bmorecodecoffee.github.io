@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "checkJs": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "baseUrl": "./",
+      "paths": {
+        "@/*": ["src/*"]
+      },
+      "lib": ["es6", "dom"]
+    },
+    "exclude": ["node_modules", "**/node_modules/*"]
+  }
+  
