@@ -28,8 +28,6 @@
       <br>
       <b>Q&A:</b> Max 5 minutes
       <br>
-      <b>Topic:</b> Must be technical
-      <br>
       <br>
     </div>  
     <div class="talk-requirements">

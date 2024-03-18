@@ -101,5 +101,12 @@
       }
     }
   }
+
+  @media (orientation: portrait) {
+      .content {
+        width: 100%; /* Full width in portrait mode */
+        padding: 0 10px; /* Add padding to not touch the very edge of the screen */
+      }
+    }
 }
 </style>
