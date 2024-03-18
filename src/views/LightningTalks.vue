@@ -43,7 +43,10 @@ export default {
 };
 </script>
 
-<style scoped>
+
+<style lang="scss">
+@import "../assets/theme/color_palette";
+
 .lightning-talks {
   display: flex;
   flex-direction: column;
@@ -57,7 +60,7 @@ export default {
 .title {
   text-align: center;
   font-weight: bold;
-  color: #333;
+  color: $midnight_blue1;
   margin-bottom: 10px;
 }
 
@@ -69,7 +72,7 @@ export default {
 }
 
 .section-title {
-  color: #0056b3;
+  color: $midnight_blue1;
   text-align: center;
   margin-bottom: 15px;
   font-size: 2rem;
@@ -102,7 +105,7 @@ export default {
 
 .signup-btn {
   margin-top: 20px;
-  background-color: #007bff;
+  background-color: $midnight_blue1;
   color: white;
   padding: 12px 40px;
   text-decoration: none;
@@ -115,7 +118,7 @@ export default {
 }
 
 .signup-btn:hover {
-  background-color: #0056b3;
+  background-color: $midnight_blue1;
   font-size: 3rem;
 }
 </style>
