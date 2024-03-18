@@ -10,12 +10,12 @@ describe("Home view component", () => {
     afterEach(() => {
         cleanup();
     });
-
-    it("contains a link to the meet up", () => {
-        // Should throw an error if we don't have the link to the slack
-        screen.getByRole("link", {name: "Meet Up"});
+    
+    it("contains a link to the Meet Up page", () => {
+        // This will throw an error if the link with text "Meet Up page" is not found
+        screen.getByRole("link", { name: /meet up page/i });
     });
-
+    
     it("contains a link to the baltimore tech slack", () => {
         // Should throw an error if we don't have the link to the slack
         screen.getByRole("link", {name: "Baltimore Tech Slack"});

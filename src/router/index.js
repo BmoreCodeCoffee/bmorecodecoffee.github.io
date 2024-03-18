@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import('../views/CodeOfConduct.vue'),
     },
     {
+      path: '/lightningtalks',
+      name: 'lightningtalks',
+      component: () => import('../views/LightningTalks.vue'),
+    },
+    {
       path: '/anonymous-report',
       name: 'report',
       component: () => import('../views/AnonymousReport.vue'),

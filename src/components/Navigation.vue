@@ -1,10 +1,13 @@
 <template>
   <nav>
     <div class="row center-xs">
-      <div class="col-xs-6 col-md-2 link-space">
+      <div class="col-xs-4 col-md-2">
         <RouterLink :to="{name: 'home'}">Home page</RouterLink>
       </div>
-      <div class="col-xs-6 col-md-2">
+      <div class="col-xs-4 col-md-2">
+        <RouterLink :to="{name: 'lightningtalks'}">Lightning Talks</RouterLink>
+      </div>
+      <div class="col-xs-4 col-md-2">
         <RouterLink :to="{name: 'code-of-conduct'}">Code of Conduct</RouterLink>
       </div>
     </div>
@@ -13,8 +16,6 @@
         <img src="../assets/img/bcc_banner_long.svg" alt="Baltimore Code & Coffee logo"/>
       </div>
     </div>
-    <!-- Maybe we'll need this later, leaving it in for now -->
-    <!--        <RouterLink to="/">Home</RouterLink>-->
   </nav>
 </template>
 
